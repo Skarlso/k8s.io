@@ -2,9 +2,6 @@ serviceAccount:
   create: true
   name: mimir
 
-nginx:
-  enabled: false
-
 minio:
   enabled: false
 
@@ -36,7 +33,7 @@ mimir:
     distributor:
       remote_timeout: null
     ingester:
-      push_grpc_method_enabled: null
+      push_grpc_method_enabled: true
     common:
       storage:
         backend: gcs
@@ -55,6 +52,9 @@ mimir:
 metaMonitoring:
   serviceMonitor:
     enabled: true
+
+rollout_operator:
+  enabled: true
 
 alertmanager:
   persistentVolume:
@@ -91,6 +91,8 @@ distributor:
       memory: 2Gi
 
 ingester:
+  zoneAwareReplication:
+    enabled: false
   persistentVolume:
     size: 50Gi
     storageClass: hyperdisk-balanced
@@ -158,6 +160,8 @@ ruler:
       memory: 2Gi
 
 store_gateway:
+  zoneAwareReplication:
+    enabled: false
   persistentVolume:
     size: 10Gi
     storageClass: hyperdisk-balanced
