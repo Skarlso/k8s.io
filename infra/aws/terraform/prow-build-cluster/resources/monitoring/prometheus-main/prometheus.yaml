@@ -25,14 +25,14 @@ spec:
   resources:
     requests:
       cpu: 4
-      memory: 32Gi
+      memory: 24Gi
     limits:
       cpu: 4
-      memory: 32Gi
+      memory: 24Gi
   replicas: 1
   logLevel: info
   logFormat: logfmt
-  retention: 7d
+  retention: 30d
   scrapeInterval: 15s
   securityContext:
     fsGroup: 0
