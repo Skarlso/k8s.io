@@ -354,8 +354,8 @@ class RedirTest(HTTPTestCase):
 
     def test_slack(self):
         for base in ('slack.k8s.io', 'slack.kubernetes.io'):
-            self.assert_permanent_redirect(base, 'https://inviter.co/kubernetes')
-            self.assert_permanent_redirect(base + '/$path', 'https://inviter.co/kubernetes',
+            self.assert_temp_redirect(base, 'https://inviter.co/kubernetes')
+            self.assert_temp_redirect(base + '/$path', 'https://inviter.co/kubernetes',
                                       path=rand_num())
 
     def test_submit_queue(self):
