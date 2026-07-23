@@ -60,7 +60,7 @@ alertmanager:
   persistentVolume:
     enabled: true
     storageClass: hyperdisk-balanced
-    size: 20Gi
+    size: 50Gi
   replicas: 2
   resources:
     limits:
@@ -73,7 +73,7 @@ alertmanager:
 
 compactor:
   persistentVolume:
-    size: 20Gi
+    size: 50Gi
     storageClass: hyperdisk-balanced
   resources:
     limits:
@@ -164,7 +164,7 @@ store_gateway:
   zoneAwareReplication:
     enabled: false
   persistentVolume:
-    size: 20Gi
+    size: 50Gi
     storageClass: hyperdisk-balanced
   replicas: 3
   resources:
