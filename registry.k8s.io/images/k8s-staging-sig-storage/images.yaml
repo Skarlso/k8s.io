@@ -297,6 +297,7 @@
     "sha256:4833c13769fcfd1c41903bb51b6c43e71ffbe0c81b33ad5e1fbaa84d5e26dad0": [ "v2.6.0" ]
     "sha256:bf8427d8ce78fb6c41043f1fa75fbb1cd3e5bd1d336a6fbc3b13ff5574a30ede": [ "v2.7.0" ]
     "sha256:3e2bf2eaef9fc3e9043829704fb061e6a5e296bb36d1043c9c5f973d8b702cce": [ "v2.8.0" ]
+    "sha256:f9d65db8bda21847d0e281ee219068845c44a3790d439d2e1f60a84e15d4db76": [ "v2.9.0" ]
 - name: local-volume-node-cleanup
   dmap:
     "sha256:f31b2d8f498f9b06d565cbef32cede8a92a98de366b83b711a7478e16b7d1a81": [ "v2.6.0" ]
